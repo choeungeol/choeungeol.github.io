@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Shift Gomok | Tactical Push Battle</title>
+    <meta
+      name="description"
+      content="밀고, 읽고, 뒤집는 SF 오목 대전. AI 라이벌, 친구 대전, 랭크전까지 하나의 전장에서 이어지는 Shift Gomok."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shift Gomok" />
+    <meta
+      property="og:description"
+      content="밀고, 읽고, 뒤집는 SF 오목 대전. AI 라이벌, 친구 대전, 랭크전까지."
+    />
+    <meta property="og:image" content="./assets/og-kakao-final.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Shift Gomok 홈">
+          <img src="./assets/app-icon.png" alt="" />
+          <span>SHIFT GOMOK</span>
+        </a>
+        <nav class="top-actions" aria-label="빠른 링크">
+          <a href="#modes">모드</a>
+          <a href="#rivals">라이벌</a>
+          <a class="cta-link" href="https://play.google.com/store/apps/details?id=com.aqua.shiftgomok" target="_blank" rel="noopener noreferrer">
+            Google Play 설치
+          </a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-backdrop"></div>
+          <div class="hero-noise"></div>
+          <div class="hero-grid"></div>
+
+          <div class="hero-copy reveal">
+            <p class="eyebrow">TACTICAL PUSH BATTLE</p>
+            <h1>밀고, 읽고, 뒤집는<br />SF 오목 대전</h1>
+            <p class="hero-body">
+              돌을 두면 인접한 적 돌이 밀려납니다. 단순히 5목을 잇는 게임이 아니라,
+              한 수로 판 전체를 흔드는 전술형 오목입니다.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                href="https://play.google.com/store/apps/details?id=com.aqua.shiftgomok"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                지금 설치
+              </a>
+              <a class="button button-secondary" href="#overview">게임 특징 보기</a>
+            </div>
+            <ul class="hero-signals" aria-label="게임 포인트">
+              <li>AI 라이벌</li>
+              <li>친구 대전</li>
+              <li>전술 랭크전</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="feature-stage">
+              <div class="feature-screen">
+                <img
+                  class="stage-banner"
+                  src="./assets/feature-graphic.png"
+                  alt="Shift Gomok 전투 연출 배너"
+                />
+                <div class="screen-scan"></div>
+              </div>
+
+              <div class="board-mini" aria-hidden="true">
+                <div class="board-mini__grid">
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell is-player"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell is-ai"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell is-player"></span>
+                  <span class="cell"></span>
+
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell pulse"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+
+                  <span class="cell"></span>
+                  <span class="cell is-player"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell is-ai"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell is-ai"></span>
+                  <span class="cell"></span>
+
+                  <span class="cell"></span>
+                  <span class="cell is-player"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell is-ai"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                  <span class="cell"></span>
+                </div>
+              </div>
+
+              <img class="pilot pilot-ren" src="./assets/ren.png" alt="라이벌 렌" />
+              <img class="pilot pilot-kagura" src="./assets/kagura.png" alt="라이벌 카구라" />
+            </div>
+          </div>
+        </section>
+
+        <section id="overview" class="section overview">
+          <div class="section-head reveal">
+            <p class="eyebrow">WHY SHIFT GOMOK</p>
+            <h2>익숙한 규칙 위에, 완전히 다른 한 수</h2>
+          </div>
+
+          <div class="feature-rail">
+            <article class="feature-line reveal">
+              <span class="feature-index">01</span>
+              <div>
+                <h3>밀기 규칙이 만드는 전장 변화</h3>
+                <p>
+                  착수와 동시에 인접한 적 돌을 밀어내기 때문에, 수비와 공격이 한 번에
+                  일어납니다. 같은 5목이라도 읽는 방식이 완전히 달라집니다.
+                </p>
+              </div>
+            </article>
+
+            <article class="feature-line reveal">
+              <span class="feature-index">02</span>
+              <div>
+                <h3>라이벌마다 다른 말투와 전술 성향</h3>
+                <p>
+                  렌, 카구라, 미소라, 시온. 각 라이벌은 다른 압박감과 대사, 전투 분위기로
+                  같은 판도 다르게 느껴지게 만듭니다.
+                </p>
+              </div>
+            </article>
+
+            <article class="feature-line reveal">
+              <span class="feature-index">03</span>
+              <div>
+                <h3>혼자 익히고, 친구와 겨루고, 랭크전으로 올라가기</h3>
+                <p>
+                  AI 대전으로 감각을 익힌 뒤 친구 대전과 전술 랭크전까지 자연스럽게
+                  이어집니다. 한 게임 안에서 학습과 경쟁이 연결됩니다.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="modes" class="section modes">
+          <div class="modes-visual reveal">
+            <div class="mode-screen">
+              <img src="./assets/bridge-bg.png" alt="우주 브리지 배경" />
+              <div class="mode-screen__overlay">
+                <p class="eyebrow">TACTICAL LOOP</p>
+                <h3>읽고, 밀고, 마무리하기</h3>
+                <p>
+                  직관적인 조작 위에 자리 계산, 밀기 각도, 다음 수 경고가 겹치면서
+                  라운드마다 전술 감각이 살아납니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modes-copy">
+            <div class="section-head reveal">
+              <p class="eyebrow">BATTLE MODES</p>
+              <h2>한 판의 감각을 세 가지 모드로 확장</h2>
+            </div>
+
+            <div class="mode-list">
+              <article class="mode-item reveal">
+                <h3>AI 대전</h3>
+                <p>
+                  라이벌의 성향과 대사를 읽으며 규칙을 익히는 메인 모드. 전술 지원과
+                  라이벌 경고 시스템으로 초반 진입 장벽을 낮췄습니다.
+                </p>
+              </article>
+
+              <article class="mode-item reveal">
+                <h3>친구 대전</h3>
+                <p>
+                  코드로 바로 연결해 같은 규칙으로 승부할 수 있습니다. 밀기 규칙이
+                  익숙한 오목 대결을 완전히 다른 템포로 바꿉니다.
+                </p>
+              </article>
+
+              <article class="mode-item reveal">
+                <h3>전술 랭크전</h3>
+                <p>
+                  한 수의 판단이 즉시 RP에 반영됩니다. 짧게 끝나는 한 판 안에서도
+                  수읽기와 심리전이 분명하게 남습니다.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="rivals" class="section rivals">
+          <div class="section-head reveal">
+            <p class="eyebrow">RIVAL CREW</p>
+            <h2>전장은 조용해도, 라이벌은 조용하지 않습니다</h2>
+          </div>
+
+          <div class="rival-strip">
+            <figure class="rival reveal">
+              <img src="./assets/ren.png" alt="렌" />
+              <figcaption>
+                <strong>REN</strong>
+                <span>정교하게 읽고, 실수를 허용하지 않는 압박형</span>
+              </figcaption>
+            </figure>
+
+            <figure class="rival reveal">
+              <img src="./assets/kagura.png" alt="카구라" />
+              <figcaption>
+                <strong>KAGURA</strong>
+                <span>속도감 있게 몰아붙이는 전면 공세형</span>
+              </figcaption>
+            </figure>
+
+            <figure class="rival reveal">
+              <img src="./assets/misora.png" alt="미소라" />
+              <figcaption>
+                <strong>MISORA</strong>
+                <span>균형과 교란을 함께 가져가는 트릭형</span>
+              </figcaption>
+            </figure>
+
+            <figure class="rival reveal">
+              <img src="./assets/shion.png" alt="시온" />
+              <figcaption>
+                <strong>SHION</strong>
+                <span>차갑게 틈을 재는 계산 중심 방어형</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section final-cta reveal">
+          <div class="final-cta__inner">
+            <img src="./assets/app-icon.png" alt="" />
+            <div>
+              <p class="eyebrow">SHIFT GOMOK</p>
+              <h2>지금 바로 전술 한 판을 시작해보세요</h2>
+              <p>
+                카카오톡 공유용 링크가 필요했다면, 이제 이 페이지를 먼저 보내면 됩니다.
+                게임 설명과 설치 버튼을 한 번에 전달할 수 있습니다.
+              </p>
+            </div>
+            <div class="final-cta__actions">
+              <a
+                class="button button-primary"
+                href="https://play.google.com/store/apps/details?id=com.aqua.shiftgomok"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google Play 열기
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://choeungeol.github.io/shift-gomoku-privacy/privacy-policy.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                개인정보처리방침
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Support · <a href="mailto:aqua0416@gmail.com">aqua0416@gmail.com</a></p>
+        <p>Google Play · <a href="https://play.google.com/store/apps/details?id=com.aqua.shiftgomok" target="_blank" rel="noopener noreferrer">com.aqua.shiftgomok</a></p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
