@@ -99,7 +99,7 @@ a {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 500px) minmax(360px, 1fr);
+  grid-template-columns: minmax(0, 580px) minmax(420px, 1fr);
   align-items: center;
   min-height: 100svh;
   padding: 108px 24px 44px;
@@ -144,7 +144,7 @@ a {
 }
 
 .hero-copy {
-  max-width: 500px;
+  max-width: 580px;
 }
 
 .eyebrow {
@@ -168,13 +168,13 @@ a {
 }
 
 .hero h1 {
-  font-size: clamp(2.9rem, 6vw, 5rem);
+  font-size: clamp(2.45rem, 4.8vw, 4.3rem);
   font-weight: 900;
   letter-spacing: -0.05em;
 }
 
 .hero-body {
-  max-width: 26rem;
+  max-width: 31rem;
   margin: 22px 0 0;
   color: var(--muted);
   font-size: clamp(1rem, 2vw, 1.16rem);
@@ -249,18 +249,18 @@ a {
 
 .hero-visual {
   justify-self: end;
-  width: min(100%, 640px);
+  width: min(100%, 700px);
 }
 
 .feature-stage {
   position: relative;
-  min-height: 520px;
+  min-height: 500px;
   transform: translate3d(calc(var(--hero-shift-x) * 0.18), calc(var(--hero-shift-y) * 0.18), 0);
 }
 
 .feature-screen {
   position: absolute;
-  inset: 6px 0 38px 48px;
+  inset: 10px 0 24px 18px;
   overflow: hidden;
   border-radius: 34px;
   border: 1px solid rgba(124, 255, 217, 0.2);
@@ -292,7 +292,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center center;`r`n  transform: scale(1.02);
   opacity: 0.96;
 }
 
@@ -305,7 +305,7 @@ a {
   animation: screenScan 6s linear infinite;
 }
 
-.hero-note {
+ .hero-note {`r`n  display: none;
   position: absolute;
   display: grid;
   gap: 5px;
@@ -410,7 +410,7 @@ a {
   position: sticky;
   top: 110px;
   overflow: hidden;
-  min-height: 520px;
+  min-height: 500px;
   border-radius: 34px;
   border: 1px solid rgba(124, 255, 217, 0.16);
   background: rgba(4, 19, 16, 0.74);
@@ -568,7 +568,7 @@ a {
   }
 
   .feature-stage {
-    min-height: 520px;
+    min-height: 500px;
   }
 
   .feature-screen {
@@ -662,4 +662,5 @@ a {
     padding: 0 16px 28px;
   }
 }
+
 
